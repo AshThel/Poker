@@ -36,7 +36,7 @@ public class Talia
             index_1 = generator.nextInt( size );
             index_2 = generator.nextInt( size );
 
-            temp = (Karta) karty.get( index_2 );
+            tmp = (Karta) karty.get( index_2 );
 
             karty.set( index_2 , karty.get( index_1 ) );
             karty.set( index_1, tmp );
@@ -46,7 +46,7 @@ public class Talia
 
     public Karta dobierzZTalii()
     {
-        return karty.remove( Karty.size()-1 );
+        return karty.remove( karty.size()-1 );
     }
 
 
